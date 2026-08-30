@@ -1,5 +1,10 @@
 # SkyBlock Bazaar Tracker
 
+> **graphify knowledge graph: built 2026-08-30** (13 nodes, 4 communities — thin, as
+> expected for a 4-file project). Use `graphify query "<question>"` from the project
+> root instead of re-reading the code from scratch; rebuild with `graphify . --update`
+> after changes. Outputs in `graphify-out/` (`graph.html`, `GRAPH_REPORT.md`).
+
 ## Commands
 ```
 pip install -r requirements.txt

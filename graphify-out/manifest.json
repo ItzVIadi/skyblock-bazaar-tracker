@@ -1,0 +1,26 @@
+{
+  "bazaar_tracker.py": {
+    "mtime": 1784746478.9891627,
+    "seen": 1788124644.511713,
+    "ast_hash": "15d52509bfcd4568478e13708d6e33c5",
+    "semantic_hash": "15d52509bfcd4568478e13708d6e33c5"
+  },
+  "CLAUDE.md": {
+    "mtime": 1787927933.524284,
+    "seen": 1788124644.5117173,
+    "ast_hash": "32c5581299c6f023512559f99ab3e4e7",
+    "semantic_hash": "32c5581299c6f023512559f99ab3e4e7"
+  },
+  "README.md": {
+    "mtime": 1784746303.5402467,
+    "seen": 1788124644.5117197,
+    "ast_hash": "f6cd82ef8f9e1d5c9cde782e80b32e8e",
+    "semantic_hash": "f6cd82ef8f9e1d5c9cde782e80b32e8e"
+  },
+  "requirements.txt": {
+    "mtime": 1784746296.9679291,
+    "seen": 1788124644.5117211,
+    "ast_hash": "197b4deb87ffa3decd9f045926a86cd0",
+    "semantic_hash": "197b4deb87ffa3decd9f045926a86cd0"
+  }
+}

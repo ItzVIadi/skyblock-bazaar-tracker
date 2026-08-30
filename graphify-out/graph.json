@@ -1,0 +1,381 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "spread_scoring_filters",
+        "label": "Spread-scoring liquidity/outlier filters",
+        "nodes": [
+          "claude_low_liquidity_noise_filter",
+          "claude_max_reasonable_spread_cap",
+          "claude_volume_weighted_price_basis",
+          "bazaar_tracker_spread_percent"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.8,
+        "source_file": "CLAUDE.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "bazaar_tracker_fetch_products",
+      "label": "fetch_products()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Bazaar Fetch & CLI Entry",
+      "file_type": "code",
+      "norm_label": "fetch_products()",
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "bazaar_tracker_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Bazaar Fetch & CLI Entry",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "bazaar_tracker_spread_percent",
+      "label": "spread_percent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Spread Scoring & Filters",
+      "file_type": "code",
+      "norm_label": "spread_percent()",
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "bazaar_tracker",
+      "label": "bazaar_tracker.py",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Bazaar Fetch & CLI Entry",
+      "file_type": "code",
+      "norm_label": "bazaar_tracker.py",
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "bazaar_tracker_rationale_1",
+      "label": "Prints the top Hypixel SkyBlock Bazaar items by instant buy/sell spread. Uses\u2026",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "Bazaar Fetch & CLI Entry",
+      "file_type": "rationale",
+      "norm_label": "prints the top hypixel skyblock bazaar items by instant buy/sell spread. uses...",
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "requirements_requests",
+      "label": "requests (HTTP dependency)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Bazaar Fetch & CLI Entry",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "requests (http dependency)",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "claude_low_liquidity_noise_filter",
+      "label": "Low-liquidity noise filter (MIN_WEEKLY_VOLUME / MIN_ACTIVE_ORDERS)",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "Spread Scoring & Filters",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "low-liquidity noise filter (min_weekly_volume / min_active_orders)",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "claude_max_reasonable_spread_cap",
+      "label": "MAX_REASONABLE_SPREAD outlier cap (dumped enchant books)",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "Spread Scoring & Filters",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "max_reasonable_spread outlier cap (dumped enchant books)",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "claude_volume_weighted_price_basis",
+      "label": "Volume-weighted buyPrice/sellPrice basis (not raw top-of-book)",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "Spread Scoring & Filters",
+      "contributor": null,
+      "file_type": "rationale",
+      "norm_label": "volume-weighted buyprice/sellprice basis (not raw top-of-book)",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_hypixel_public_bazaar_endpoint",
+      "label": "Hypixel public /v2/skyblock/bazaar endpoint (no API key)",
+      "author": null,
+      "captured_at": null,
+      "community": 2,
+      "community_name": "Public API / No-Auth Constraint",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "hypixel public /v2/skyblock/bazaar endpoint (no api key)",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "claude_no_api_key_constraint",
+      "label": "No Hypixel API key / auth despite parent folder name",
+      "author": null,
+      "captured_at": null,
+      "community": 2,
+      "community_name": "Public API / No-Auth Constraint",
+      "contributor": null,
+      "file_type": "rationale",
+      "norm_label": "no hypixel api key / auth despite parent folder name",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_bazaar_flip_spread",
+      "label": "Bazaar flip buy/sell spread ranking",
+      "author": null,
+      "captured_at": null,
+      "community": 3,
+      "community_name": "Flip-Spread Ranking Concept",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "bazaar flip buy/sell spread ranking",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_skyblock_bazaar_tracker",
+      "label": "SkyBlock Bazaar Tracker (tool)",
+      "author": null,
+      "captured_at": null,
+      "community": 3,
+      "community_name": "Flip-Spread Ranking Concept",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "skyblock bazaar tracker (tool)",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null
+    }
+  ],
+  "links": [
+    {
+      "source": "bazaar_tracker_main",
+      "target": "bazaar_tracker_fetch_products",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "bazaar_tracker_main",
+      "target": "bazaar_tracker_spread_percent",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "bazaar_tracker",
+      "target": "bazaar_tracker_fetch_products",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "bazaar_tracker",
+      "target": "bazaar_tracker_spread_percent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "bazaar_tracker",
+      "target": "bazaar_tracker_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "bazaar_tracker_rationale_1",
+      "target": "bazaar_tracker",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "bazaar_tracker.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_no_api_key_constraint",
+      "target": "readme_hypixel_public_bazaar_endpoint",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_skyblock_bazaar_tracker",
+      "target": "readme_bazaar_flip_spread",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_low_liquidity_noise_filter",
+      "target": "bazaar_tracker_spread_percent",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_max_reasonable_spread_cap",
+      "target": "bazaar_tracker_spread_percent",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "claude_volume_weighted_price_basis",
+      "target": "bazaar_tracker_spread_percent",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_skyblock_bazaar_tracker",
+      "target": "bazaar_tracker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bazaar_flip_spread",
+      "target": "bazaar_tracker_main",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements_requests",
+      "target": "bazaar_tracker_fetch_products",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bazaar_flip_spread",
+      "target": "bazaar_tracker_spread_percent",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_hypixel_public_bazaar_endpoint",
+      "target": "bazaar_tracker_fetch_products",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "spread_scoring_filters",
+      "label": "Spread-scoring liquidity/outlier filters",
+      "nodes": [
+        "claude_low_liquidity_noise_filter",
+        "claude_max_reasonable_spread_cap",
+        "claude_volume_weighted_price_basis",
+        "bazaar_tracker_spread_percent"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.8,
+      "source_file": "CLAUDE.md"
+    }
+  ],
+  "built_at_commit": "1fdfb540296a7289c6eb0ca0ab0861b564900c4f"
+}

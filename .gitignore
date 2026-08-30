@@ -1,0 +1,7 @@
+# Claude Code local runtime files
+.claude/
+
+# graphify: machine-specific paths + regenerable extraction cache
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/cache/
