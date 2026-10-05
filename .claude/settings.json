@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"$CLAUDE_PROJECT_DIR/check-sync.sh\" --hook",
+            "shell": "bash",
+            "timeout": 25,
+            "statusMessage": "Pruefe Git-Sync..."
+          }
+        ]
+      }
+    ]
+  }
+}
